@@ -18,6 +18,8 @@ public:
    /// @brief
    std::vector<std::string> getDescriptions() const;
 
+   void helloNotizbuch();
+
 private:
 
    std::string m_noteFilePath;

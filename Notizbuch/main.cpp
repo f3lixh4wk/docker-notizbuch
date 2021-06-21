@@ -4,5 +4,6 @@
 
 int main()
 {
-   std::cout << "Hello Notizbuch!\n";
+   NoteReader reader("test");
+   reader.helloNotizbuch();
 }
