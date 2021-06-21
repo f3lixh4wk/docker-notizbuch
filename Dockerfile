@@ -11,7 +11,8 @@ COPY Notizbuch /Notizbuch
 WORKDIR /Notizbuch/
 
 # Make Notizbuch executible
-RUN g++ -o Notizbuch main.cpp NoteReader.cpp
+RUN g++ -c NoteReader.cpp main.cpp
+RUN g++ -o Notizbuch NoteReader.o main.o
 
 # Run the executible
 CMD [ "./Notizbuch" ]
