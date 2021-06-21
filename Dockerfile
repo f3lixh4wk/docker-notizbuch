@@ -10,8 +10,8 @@ COPY Notizbuch /Notizbuch
 # Change the directory to /Notizbuch/
 WORKDIR /Notizbuch/
 
-# Make Notizbuch.cpp executible
-RUN g++ -o Notizbuch Notizbuch.cpp
+# Make Notizbuch executible
+RUN g++ -o Notizbuch main.cpp NoteReader.cpp
 
 # Run the executible
 CMD [ "./Notizbuch" ]
